@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<!--
+	Ethereal by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>a'pari fashion</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	</head>
+
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		.default, .default2 {
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+			min-height: 1000px;
+		}
+
+		.default {
+			background: black;
+			background-repeat: no-repeat;
+			background-image: url('1.png');
+			background-size: 100% 100%;
+		}
+
+		.default2 {
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+
+
+		.bg-all, .bg1, .bg2, .bg4 {
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+			min-height: 1000px; 
+			background: black; 
+			background-size: 100% 100%;
+			background-repeat: none;
+		}
+
+		.bg-all {
+			background-image: url('0.png');
+		}
+
+		.bg1 {
+			background-image: url('2.png');
+		}
+
+		.bg2 {
+			background-image: url('3.png');
+		}
+
+		.bg3 {
+			background-image: url('4.png');
+		}
+
+		ul li {
+			list-style: none;
+			float: left;
+			color: #fff;
+			cursor: pointer;
+			border-radius: 10px;
+			background: purple;
+			margin-right: 30px;
+			padding: 10px;
+		}
+
+	</style>
+	<body>
+		<div class="default">
+			<div class="default2" id="good">
+				<ul>
+					<li id="bg1">вывеска 1</li>
+					<li id="bg2">вывеска 2</li>
+					<li id="bg3">вывеска 3</li>
+					<li id="bg-all">всё горит</li>
+				</ul>
+				&nbsp;
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			$('ul li').click(function(){
+				console.log($(this).attr('id'));
+				$('#good').removeClass().addClass('default2').addClass($(this).attr('id'));
+			})
+		</script>
+	</body>
+</html>
